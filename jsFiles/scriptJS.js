@@ -39,8 +39,12 @@ let pushMassive = setInterval(() => {
  return bestScore.innerHTML = `High score: ${largeNumber}`;
 }, 500)
 
-
-
+//скрипты для меню страницы
+const close = document.getElementById("closeTab");
+let closeGame = () => {
+ window.close();
+}
+close.onclick = closeGame;
 
 
 
