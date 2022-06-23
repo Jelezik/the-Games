@@ -1,7 +1,3 @@
-let but1 = document.getElementById("but2");
-let text = document.getElementById("text");
-function pressNo() {
-    text.innerText = "Maybe you press yes? :(";
-}
+const close = document.getElementById("closeTab");
+const select = document.getElementById("closeTab");
 
-but1.onclick = pressNo;

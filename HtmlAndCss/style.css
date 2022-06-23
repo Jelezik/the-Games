@@ -110,23 +110,39 @@
     font-family: "NSimSun";
     text-align: center;
 }
-.firstText {
-    border: solid black 2px;
-    border-radius: 5px;
-    text-align: center;
-    width: 50%;
-    margin: auto;
-}
-.firstMenu button {
-    border-radius: 5px;
-    margin: 15px 10px 0 10px;
-    width: 50px;
-    height: 25px;
-    font-weight: bold;
-    font-size: 15px;
+
+.bodyMenu {
+    background-color: rgba(24,24,24,0.96);
 }
 
-.aName {
-    text-decoration: none;
-    color: black;
+#flex-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 200px;
+}
+
+#gameSelection, #closeTab {
+ margin: 0;
+  border: solid 1px white;
+  width: 280px;
+  height: 80px;
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-shadow: 1px 1.2px;
+  transition: all 0.4s linear;
+}
+
+#gameSelection:hover {
+  transform: translateX(-20px);
+  background-color: #6a0a17;
+}
+
+#closeTab:hover {
+  transform: translateX(20px);
+  background-color: #6a0a17;
 }
