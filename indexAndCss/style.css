@@ -1,0 +1,132 @@
+#game {
+    width: 600px;
+    height: 200px;
+    border-bottom: solid 1px black;
+    margin: auto;
+}
+
+#dino {
+ width: 30px;
+ height: 30px;
+ background-image: url("/imageDino/dinosaur.png");
+ background-size: 30px;
+    position: relative;
+    top: 170px;
+}
+
+#cactus {
+ width: 40px;
+ height: 40px;
+    background-image: url("/imageDino/cactus.png");
+    background-size: 40px 40px;
+ position: relative;
+ top: 130px;
+ left: 570px;
+ animation: cactusMove 1s infinite linear;
+}
+
+#cloudFirst {
+    background-image: url("/imageDino/cloud.png");
+    width: 70px;
+    height: 50px;
+    position: relative;
+    background-size: 70px 50px;
+    left: 520px;
+    animation: cloud1Move 15s infinite linear;
+}
+
+#cloudSecond {
+    background-image: url("/imageDino/cloud.png");
+    width: 100px;
+    height: 70px;
+    position: absolute;
+    background-size: 100px 70px;
+    top: 40px;
+    left: 820px;
+    animation: cloud2Move 20s infinite linear;
+}
+
+@keyframes cloud1Move {
+    0% {
+        left: 530px;
+        opacity: 0%;
+    }
+    20% {
+        opacity: 100%;
+    }
+    100% {
+        left: -20px;
+        opacity: 0%;
+    }
+}
+
+@keyframes cloud2Move {
+    0% {
+        left: 830px;
+        opacity: 0%;
+    }
+    20% {
+        opacity: 100%;
+    }
+    100% {
+        left: 400px;
+        opacity: 0%;
+    }
+}
+
+@keyframes cactusMove {
+    0% {
+        left: 580px;
+    }
+    100% {
+        left: -20px;
+    }
+}
+
+.jump {
+    animation: jump 0.7s linear;
+}
+
+@keyframes jump {
+    0% {
+        top: 150px;
+    }
+    30% {
+        top: 130px;
+    }
+    50% {
+        top: 80px;
+    }
+    80% {
+        top: 130px;
+    }
+    100% {
+        top: 150px;
+    }
+}
+
+
+* {
+    font-family: "NSimSun";
+    text-align: center;
+}
+.firstText {
+    border: solid black 2px;
+    border-radius: 5px;
+    text-align: center;
+    width: 50%;
+    margin: auto;
+}
+.firstMenu button {
+    border-radius: 5px;
+    margin: 15px 10px 0 10px;
+    width: 50px;
+    height: 25px;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.aName {
+    text-decoration: none;
+    color: black;
+}
